@@ -11,6 +11,7 @@ This is a working repository. New labs and updates will be added as the class pr
 | [Amazon S3 Hands-On Walkthrough](s3-lab/README.md) | Bucket naming, uploading objects, versioning, encryption, access control, presigned URLs, lifecycle rules, and cleanup | AWS Management Console |
 | [Linux Command Quick Reference](Linux/Linux_command.md) | Command prompts, important Linux files, common commands, standard input/output, and redirection | Linux terminal with Bash |
 | [Linux Users, Groups, and Administrative Access](Linux/Linux_users_and_groups.md) | Local users and groups, account management, root privileges, `su`, `sudo`, and cleanup | Linux on WSL or a Linux VM; an existing sudo-enabled account |
+| [EC2 SSH Connection Guide](Linux/EC2_SSH_connection_guide.md) | Protect an EC2 private key on macOS, Linux, and Windows; connect with SSH and troubleshoot permissions | Terminal, Windows OpenSSH, or PuTTY |
 
 ## Getting Started
 
