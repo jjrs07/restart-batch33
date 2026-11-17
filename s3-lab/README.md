@@ -3,7 +3,7 @@
 **AWS re/Start — Batch 33**<br>
 **Duration:** 45–60 minutes<br>
 **Format:** Independent, self-paced AWS Management Console activity<br>
-**Region:** `us-east-2` (Ohio)
+**Region:** When using the sandbox, stick with the default Region assigned to you. Use `us-east-2` (Ohio) outside the sandbox.
 
 ---
 
@@ -11,7 +11,7 @@
 
 | Item | Value |
 |---|---|
-| Region | `us-east-2` (Ohio) — **use this Region for the whole activity** |
+| Region | Sandbox: use the default Region assigned to you. Outside the sandbox: `us-east-2` (Ohio). **Use the same Region for the whole activity.** |
 | Your initials | e.g. `jdc` — you will use this in your bucket name |
 | Today's date | November 12, 2026 (`11/12/2026`); use `20261112` in bucket names |
 
@@ -91,7 +91,7 @@ This tells you at a glance who owns it, which environment it belongs to, what it
 ## Part 2 — Create the Bucket (5 min)
 
 1. Sign in to the **AWS Management Console**.
-2. Top right — confirm your **Region** says **Ohio (us-east-2)**.
+2. Top right — confirm your **Region** matches the default Region assigned to your sandbox. Outside the sandbox, use **Ohio (us-east-2)**.
 3. In the search bar type **S3** and open the S3 console.
 4. Click **Create bucket**.
 
@@ -101,7 +101,7 @@ Fill in the form:
 |---|---|---|
 | **Bucket type** | General purpose | Directory buckets are for S3 Express One Zone (very low latency, single AZ). Not needed here. |
 | **Bucket name** | `restart-b33-<initials>-<date>` | Global uniqueness |
-| **Region** | US East (Ohio) us-east-2 | Data residency and latency |
+| **Region** | Default Region assigned to your sandbox; outside the sandbox, US East (Ohio) `us-east-2` | Data residency and latency |
 | **Copy settings from existing bucket** | Skip | |
 | **Object Ownership** | **ACLs disabled (recommended)** — leave as is | ACLs are legacy. Modern access control is IAM + bucket policy. |
 | **Block Public Access** | **Leave ALL FOUR boxes checked** | This is your safety net |
