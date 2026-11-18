@@ -1,16 +1,16 @@
 #!/usr/bin/env bash
 #
-# setup.sh — (re)create the practice file tree for the Linux navigation lab.
+# setup-navigation-lab.sh — (re)create the practice file tree for the Linux navigation lab.
 #
 # Run this to build the "cloudmart" folder tree you'll navigate around.
 # It is SAFE to run again any time — it resets the tree to a clean, known state,
 # so if you delete or move things during practice, just run it again.
 #
-#   ./setup.sh
+#   ./setup-navigation-lab.sh
 #
 set -euo pipefail
 
-LAB_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+LAB_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/../navigating-linux-file-system" && pwd)"
 ROOT="$LAB_DIR/practice"
 
 echo "Building a fresh practice tree at:"

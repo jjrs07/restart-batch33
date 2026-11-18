@@ -68,17 +68,17 @@ Windows uses file access control lists instead of `chmod`. Use a local NTFS loca
 
 ### Prepare the Key Automatically with PowerShell
 
-[Prepare-EC2Key.ps1](Prepare-EC2Key.ps1) is a Windows helper script you run **after downloading your EC2 private key**. It looks for `labsuser.pem` in your account's Downloads folder, checks that your account owns it, and asks whether to rename it. Answer `yes`/`y` to supply a new filename or `no`/`n` to keep the current name. A new name may include `.pem` or omit the extension.
+[Prepare-EC2Key.ps1](scripts/Prepare-EC2Key.ps1) is a Windows helper script you run **after downloading your EC2 private key**. It looks for `labsuser.pem` in your account's Downloads folder, checks that your account owns it, and asks whether to rename it. Answer `yes`/`y` to supply a new filename or `no`/`n` to keep the current name. A new name may include `.pem` or omit the extension.
 
 The script grants **Read and Write access to your account only**, removes inherited permissions, verifies the resulting permissions, and prints an SSH command example. It stops on missing files, invalid answers, conflicting filenames, and permission errors. It does not download the PEM key, convert it to PPK, or connect to EC2 for you. The manual methods below grant Read access only; the helper also grants owner Write access.
 
 #### Download the Script
 
-1. Open [Prepare-EC2Key.ps1](Prepare-EC2Key.ps1) in this repository on GitHub.
+1. Open [Prepare-EC2Key.ps1](scripts/Prepare-EC2Key.ps1) in this repository on GitHub.
 2. Use **Download raw file** to save it to your Windows **Downloads** folder. Keep the filename `Prepare-EC2Key.ps1`; make sure it is not saved with an extra `.txt` extension.
 3. Open the downloaded script in a text editor and review it before running it.
 
-If you already cloned the repository, you can copy `Linux/Prepare-EC2Key.ps1` to Downloads instead. The GitHub download becomes available after the script is committed and pushed to the repository.
+If you already cloned the repository, you can copy `Linux/scripts/Prepare-EC2Key.ps1` to Downloads instead. The GitHub download becomes available after the script is committed and pushed to the repository.
 
 #### Run the Script
 

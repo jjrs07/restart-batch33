@@ -19,12 +19,12 @@ Get the practice files by building them with the setup script in this folder:
 
 ```bash
 cd Linux/navigating-linux-file-system
-./setup.sh
+../scripts/setup-navigation-lab.sh
 ```
 
-That creates a `practice/cloudmart/` folder tree for you to explore. If you ever mess it up, just run `./setup.sh` again to reset it.
+That creates a `practice/cloudmart/` folder tree for you to explore. If you ever mess it up, just run `../scripts/setup-navigation-lab.sh` again to reset it.
 
-> If `./setup.sh` says *permission denied*, make it executable first: `chmod +x setup.sh`.
+> If `../scripts/setup-navigation-lab.sh` says *permission denied*, make it executable first: `chmod +x ../scripts/setup-navigation-lab.sh`.
 
 ---
 
@@ -50,7 +50,7 @@ By the end of this exercise you will be able to:
 | **Relative path** | Starts from **where you are right now** (`pwd`). | `departments/hr` |
 | `/` | The **root** of the whole file system (the very top) | `cd /` |
 | `~` | Shortcut for **your home** directory (e.g. `/home/jsant`) | `cd ~` |
-| `.` | **This** directory (where you are now) | `./setup.sh` |
+| `.` | **This** directory (where you are now) | `ls ./practice` |
 | `..` | The **parent** directory (one level up) | `cd ..` |
 | `pwd` | **Print Working Directory** — "where am I?" | `pwd` |
 
@@ -227,7 +227,7 @@ cd -            # go straight back to finance
 pwd
 ```
 
-> **Why `./` before a script?** When you run `./setup.sh`, the `./` says *"the setup.sh in THIS folder"*. Without it, the shell searches its `PATH` (a list of system folders) and won't find your local script.
+> **Why include the path to the script?** From the lab folder, `../scripts/setup-navigation-lab.sh` goes up to `Linux/` and then into `scripts/`. Typing only the script name makes the shell search its `PATH`.
 
 ---
 
@@ -276,7 +276,7 @@ Relative paths depend on where you are. Absolute paths don't — they work from 
 
    ```bash
    cd ~/restart-batch33/Linux/navigating-linux-file-system
-   ./setup.sh
+   ../scripts/setup-navigation-lab.sh
    ```
 
 2. Jump somewhere completely unrelated:
@@ -357,8 +357,8 @@ Check your commands against [`SOLUTIONS.md`](SOLUTIONS.md) when you're done.
 
 ## Reset / Clean Up
 
-- To **reset** the tree to its original state (e.g. after the copy exercises, or after deleting files): run `./setup.sh` again. It rebuilds a fresh `cloudmart/`, so any `leave-backup.txt` or other copies you made inside `practice/` simply disappear.
-- The mixing exercise copies a file into `/tmp` (outside `practice/`, so `setup.sh` won't touch it). `/tmp` clears on reboot, or remove the copies now:
+- To **reset** the tree to its original state (e.g. after the copy exercises, or after deleting files): run `../scripts/setup-navigation-lab.sh` again. It rebuilds a fresh `cloudmart/`, so any `leave-backup.txt` or other copies you made inside `practice/` simply disappear.
+- The mixing exercise copies a file into `/tmp` (outside `practice/`, so `setup-navigation-lab.sh` won't touch it). `/tmp` clears on reboot, or remove the copies now:
 
 ```bash
 rm -f /tmp/leave.txt /tmp/cloudmart-readme.txt
@@ -390,7 +390,7 @@ rm -rf Linux/navigating-linux-file-system/practice
 2. You're in `/home/you/practice/cloudmart/departments/hr`. Write a **relative** path to `engineering/team.txt`.
 3. Write the same journey as an **absolute** path.
 4. What does `cd -` do?
-5. Why do you type `./setup.sh` and not just `setup.sh`?
+5. Why do you include `../scripts/` when running `setup-navigation-lab.sh` from the lab folder?
 6. What is the one command that always tells you where you are?
 7. In `cp reports/2026/q1.txt /tmp/q1.txt`, which argument is a relative path and which is absolute — and how can you tell at a glance?
 8. True or false: you must `cd` into a folder before you can read a file inside it. Explain.

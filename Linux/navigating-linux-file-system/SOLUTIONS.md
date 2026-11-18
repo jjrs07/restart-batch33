@@ -108,7 +108,7 @@ pwd     # still shows /
    ```
 
 4. `cd -` jumps back to the **previous** directory you were in (a toggle between two locations).
-5. `./` means "in **this** folder." Without it, the shell only looks in the directories listed in `$PATH`, and your local `setup.sh` isn't there, so it wouldn't be found.
+5. `../scripts/` goes up to the `Linux/` folder and then into `scripts/`. With only the script name, the shell searches the directories listed in `$PATH`.
 6. `pwd` (print working directory).
 7. `reports/2026/q1.txt` is **relative** (no leading `/`); `/tmp/q1.txt` is **absolute** (leading `/`). Tell them apart by the first character — a leading `/` = absolute.
 8. **False.** Commands like `cat`, `cp`, `mv`, and `rm` take a path, so you can act on a file from anywhere by naming its path (relative or absolute). `cd` moves *you*; it isn't required just to read or copy a file.
