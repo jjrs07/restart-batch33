@@ -9,14 +9,11 @@ This is a working repository. New labs and updates will be added as the class pr
 | Lab or guide | What you will practice | Tools |
 |---|---|---|
 | [Amazon S3 Hands-On Walkthrough](s3-lab/README.md) | Bucket naming, uploading objects, versioning, encryption, access control, presigned URLs, lifecycle rules, and cleanup | AWS Management Console |
-| [Navigating the Linux File System](Linux/navigating-linux-file-system/README.md) | Absolute and relative paths, navigation shortcuts, reading files, and copying with paths | Linux shell on WSL, EC2, or a lab machine |
-| [Linux Command Quick Reference](Linux/Linux_command.md) | Command prompts, important Linux files, common commands, standard input/output, and redirection | Linux terminal with Bash |
-| [Linux Users, Groups, and Administrative Access](Linux/Linux_users_and_groups.md) | Local users and groups, account management, root privileges, `su`, `sudo`, and cleanup | Linux on WSL or a Linux VM; an existing sudo-enabled account |
-| [EC2 SSH Connection Guide](Linux/EC2_SSH_connection_guide.md) | Protect an EC2 private key on macOS, Linux, and Windows; connect with SSH and troubleshoot permissions | Terminal, Windows OpenSSH, or PuTTY |
+| [Linux Guides](Linux/README.md) | File system navigation, terminal commands, text editing, permissions, user administration, and SSH | See the requirements for each guide |
 
 ## Getting Started
 
-1. Open a lab or guide from the table above.
+1. Choose a lab or open the Linux guide index from the table above.
 2. Read its prerequisites. For AWS labs, use the default Region assigned to your sandbox; outside the sandbox, follow the lab’s specified Region. Before creating resources, confirm the Region; for Linux guides, open the required Linux terminal or lab environment.
 3. Follow the walkthrough in order and complete the checkpoints.
 4. Complete any exercises or review questions included in the lab.
@@ -46,9 +43,9 @@ Group resources in a folder for their topic. Hands-on labs use a `README.md` con
 
 When adding a lab or guide:
 
-1. Create a folder with a descriptive name, such as `<topic>-lab`.
-2. Add a `README.md` for a lab or a descriptive Markdown filename for a guide, with objectives, prerequisites, instructions, and cleanup steps where applicable.
-3. Add a row to the **Available Labs and Guides** table above, linking directly to the new resource.
+1. For a standalone lab, create a descriptive folder such as `<topic>-lab` and add a `README.md`. Link the lab from the **Available Labs and Guides** table above.
+2. For a Linux lesson, add a descriptive Markdown file under `Linux/` and link it from the [Linux Guides table of contents](Linux/README.md).
+3. Include objectives, prerequisites, instructions, and cleanup steps where applicable.
 
 Keep resource-specific setup details in its guide so this page remains a general entry point for the collection.
 
