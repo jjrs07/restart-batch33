@@ -10,4 +10,5 @@ Use this table of contents to find Linux lessons and hands-on walkthroughs.
 | [Linux File and Archive Commands](Linux_file_and_archive_commands.md) | Cache command paths, verify checksums, search and compare files, create links, and work with archives | Linux terminal with Bash, `zip`, and `unzip` |
 | [Linux File Permissions](Linux_file_permissions.md) | Read `ls` output, change permissions in symbolic and absolute modes, and manage file group ownership | Linux terminal with a writable practice directory |
 | [Linux Users, Groups, and Administrative Access](Linux_users_and_groups.md) | Local users and groups, account management, root privileges, `su`, `sudo`, and cleanup | Linux on WSL or a Linux VM; an existing sudo-enabled account |
+| [Crontab Scheduling Exercises](crontab-exercises/README.md) | Practice 20 schedules from minute intervals to calendar-based jobs | Linux terminal with cron |
 | [EC2 SSH Connection Guide](EC2_SSH_connection_guide.md) | Protect an EC2 private key on macOS, Linux, and Windows; connect with SSH and troubleshoot permissions | Terminal, Windows OpenSSH, or PuTTY |
